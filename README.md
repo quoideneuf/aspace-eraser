@@ -35,7 +35,7 @@ absolutely certain that your data is disposable (i.e., test data).
 Open the "Plug-ins" menu at the top right-hand side of the user interface.
 Select "Erase Database"
 
-You're session information will be deleted along with everything else, so 
+Your session information will be deleted along with everything else, so 
 you will be returned to the Welcome screen with a "backend session not 
 found" message. Log back in using the default administrator account.
 
