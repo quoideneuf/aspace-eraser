@@ -13,18 +13,30 @@ Features:
 * No pesky confirmation pop-ups or other safety measures.
 * Affords the destructive power of the command line to end-users.
 
-# Getting started
-
-Detailed instructions can be found here:
-
-     https://github.com/archivesspace/archivesspace/tree/master/plugins
+# Installation
 
 Basic instructions:
 
       cd archivesspace/plugins
       git clone https://github.com/lcdhoffman/aspace-eraser.git
       cd ../common/config
-      touch config.yml
-      echo "AppConfig[:plugins] << 'aspace-eraser'" >> config.yml
+      touch config.rb
+      echo "AppConfig[:plugins] << 'aspace-eraser'" >> config.rb
+
+Detailed instructions:
+
+     https://github.com/archivesspace/archivesspace/tree/master/plugins
+
+It goes without saying, but don't install this plug-in unless you are
+absolutely certain that your data is disposable (i.e., test data).
+
+# Usage
+
+Open the "Plug-ins" menu at the top right-hand side of the user interface.
+Select "Erase Database"
+
+You're session information will be deleted along with everything else, so 
+you will be returned to the Welcome screen with a "backend session not 
+found" message. Log back in using the default administrator account.
 
 
