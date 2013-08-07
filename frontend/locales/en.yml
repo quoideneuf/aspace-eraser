@@ -1,0 +1,5 @@
+en:
+  plugins:
+    erase_database:
+      label: Erase Database
+      success: Database Erased. Use the default account to log back in
