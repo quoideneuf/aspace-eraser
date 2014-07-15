@@ -1,3 +1,6 @@
+require 'uri'
+require 'net/http'
+
 
 class ArchivesSpaceService < Sinatra::Base
 
@@ -6,7 +9,7 @@ class ArchivesSpaceService < Sinatra::Base
     .permissions([:administer_system])
     .returns([200, :deleted]) \
   do
-    url = Solr.solr_url + "/update"
+    url = URI.parse("#{AppConfig[:solr_url]}/update")
     req = Net::HTTP::Post.new(url.request_uri)
     req['Content-type'] = 'text/xml'
     req.body = "<delete><query>*:*</query></delete>"
